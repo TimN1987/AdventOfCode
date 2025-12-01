@@ -23,7 +23,20 @@ class Day1:
         return count
     
     def part_two(self):
-        return 0
+        count = 0
+        dial = 50
+        rotations = self.parse_data()
+        for rotation in rotations:
+            step = 1 if rotation > 0 else -1
+            for _ in range(abs(rotation)):
+                dial += step
+                if dial == -1:
+                    dial = 99
+                elif dial == 100:
+                    dial = 0
+                if dial == 0:
+                    count += 1
+        return count
     
     def print_results(self):
         print("Day 1:")
