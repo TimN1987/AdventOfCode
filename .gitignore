@@ -1,1 +1,47 @@
+# ---------------------
+# OS files
+# ---------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------
+# C# / .NET
+# ---------------------
+bin/
+obj/
+*.user
+*.suo
+*.ncb
+*.log
+*.vs/
+
+# ---------------------
+# Python
+# ---------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+
+# ---------------------
+# JavaScript / Node
+# ---------------------
+node_modules/
+dist/
+build/
+npm-debug.log
+yarn-error.log
+
+# ---------------------
+# Data / input files
+# ---------------------
 Data/
+data/
+
+# ---------------------
+# VSCode
+# ---------------------
+.vscode/
