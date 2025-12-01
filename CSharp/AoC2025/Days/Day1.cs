@@ -47,13 +47,15 @@ public static class Day1
         return zeroCount;
     }
 
+    // Helper methods
+
     private static int Rotate(int startValue, string rotation)
     {
         int distance = Convert.ToInt32(rotation[1..]);
 
         // Adding distance for 'R' rotation, subtracting for 'L' rotation.
         // Adding 100 (a full circle) for 'L' rotations to keep values positive.
-        int newValue = rotation[0] == 'R' ? startValue + distance : startValue - distance + 100;
+        int newValue = rotation[0] == 'R' ? startValue + distance : startValue - distance + 100000;
 
         return newValue % 100; // Use % 100 to ensure all values in 0 - 99 range.
     }
@@ -62,7 +64,22 @@ public static class Day1
     {
         int distance = Convert.ToInt32(rotation[1..]);
 
-        return 0;
+        // Every 100 in distance gives a full rotation and returns to the start value.
+        int zeroCount = distance / 100;
+
+        // The remainder will determine the new end position.
+        int remainder = distance % 100;
+        
+        int newValue = rotation[0] == 'R' ? startValue + remainder : startValue - remainder;
+
+        if (startValue == 0)
+            return zeroCount;
+        else if (newValue <= 0)
+            zeroCount++;
+        else if (newValue >= 100)
+            zeroCount++;
+
+        return zeroCount;
     }
 
     private static int BruteForceZeroCount(int startValue, string rotation)
