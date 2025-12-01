@@ -1,6 +1,6 @@
 class Day1:
     def __init__(self):
-        with open("/../../Data/2025/day1.txt") as f:
+        with open("../../Data/2025/day1.txt") as f:
             self.data = f.readlines()
 
     def parse_data(self):
@@ -23,6 +23,26 @@ class Day1:
         return count
     
     def part_two(self):
+        count = 0
+        dial = 50
+        rotations = self.parse_data()
+        for rotation in rotations:
+            distance = abs(rotation)
+            direction = 1 if rotation >= 0 else -1
+            zero_start = dial == 0
+            count += distance // 100
+            distance %= 100
+            dial += distance * direction
+            if not zero_start:
+                if dial <= 0:
+                    count += 1
+                elif dial >= 100:
+                    count += 1
+            dial += 100000
+            dial %= 100
+        return count
+    
+    def part_two_brute_force(self):
         count = 0
         dial = 50
         rotations = self.parse_data()
