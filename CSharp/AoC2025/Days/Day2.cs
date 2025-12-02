@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
 namespace AoC2025.Days;
