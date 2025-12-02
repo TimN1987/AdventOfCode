@@ -6,6 +6,7 @@ int bruteForce = Day1.Part2B();
 
 Console.WriteLine($"Day 1:\nPart 1: {day1Part1Result}\nPart2: {day1Part2Result}\nBrute force: {bruteForce}");
 
-long day2Part1result = Day2.PartOne();
+long day2Part1Result = Day2.PartOne();
+long day2Part2Result = Day2.PartTwo();
 
-Console.WriteLine($"Day 2:\nPart 1: {day2Part1result}");
+Console.WriteLine($"Day 2:\nPart 1: {day2Part1Result}\nPart2: {day2Part2Result}");

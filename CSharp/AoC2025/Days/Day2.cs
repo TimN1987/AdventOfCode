@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
+
 namespace AoC2025.Days;
 
 public static class Day2
@@ -14,7 +17,28 @@ public static class Day2
         return total;
     }
 
+    public static long PartTwo()
+    {
+        long total = 0;
+
+        foreach (string[] s in ParseData())
+        {
+            long start = Convert.ToInt64(s[0]);
+            long end = Convert.ToInt64(s[1]);
+
+            for (long i = start; i <= end; i++)
+            {
+                if (RegexHelpers.MultipleRepeatsPattern().IsMatch(i.ToString()))
+                    total += i;
+            }
+        }
+
+        return total;
+    }
+
     // Helper methods
+
+
 
     private static long CalculateRepeatingNumbers(string start, string end)
     {
@@ -115,4 +139,14 @@ public static class Day2
         
         return data.Select(d => d.Split('-'));
     }
+}
+
+public static partial class RegexHelpers
+{
+    
+    [GeneratedRegex(@"^(\d+)\1$")]
+    public static partial Regex DoublePattern();
+
+    [GeneratedRegex(@"^(\d+)\1+$")]
+    public static partial Regex MultipleRepeatsPattern();
 }
