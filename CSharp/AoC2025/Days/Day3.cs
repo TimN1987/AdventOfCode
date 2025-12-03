@@ -71,7 +71,7 @@ public static class Day3
             }
             i--;
         }
-
+        
         return max;
     }
 
