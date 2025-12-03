@@ -11,3 +11,5 @@ day2 = Day2()
 day2.solution()
 
 # Day 3
+day3 = Day3()
+day3.print_solution()
