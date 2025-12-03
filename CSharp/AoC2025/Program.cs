@@ -4,9 +4,14 @@ int day1Part1Result = Day1.Part1();
 int day1Part2Result = Day1.Part2();
 int bruteForce = Day1.Part2B();
 
-Console.WriteLine($"Day 1:\nPart 1: {day1Part1Result}\nPart2: {day1Part2Result}\nBrute force: {bruteForce}");
+Console.WriteLine($"Day 1:\nPart 1: {day1Part1Result}\nPart 2: {day1Part2Result}\nBrute force: {bruteForce}");
 
 long day2Part1Result = Day2.PartOne();
 long day2Part2Result = Day2.PartTwo();
 
-Console.WriteLine($"Day 2:\nPart 1: {day2Part1Result}\nPart2: {day2Part2Result}");
+Console.WriteLine($"Day 2:\nPart 1: {day2Part1Result}\nPart 2: {day2Part2Result}");
+
+long day3Part1Result = Day3.PartOne();
+long day3Part2Result = Day3.PartTwo();
+
+Console.WriteLine($"Day 3:\nPart 1: {day3Part1Result}\nPart 2: {day3Part2Result}");
