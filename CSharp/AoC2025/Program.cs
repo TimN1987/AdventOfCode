@@ -15,3 +15,8 @@ long day3Part1Result = Day3.PartOne();
 long day3Part2Result = Day3.PartTwo();
 
 Console.WriteLine($"Day 3:\nPart 1: {day3Part1Result}\nPart 2: {day3Part2Result}");
+
+int day4Part1Result = Day4.PartOne();
+int day4Part2Result = Day4.PartTwo();
+
+Console.WriteLine($"Day 4:\nPart 1: {day4Part1Result}\nPart 2: {day4Part2Result}");
