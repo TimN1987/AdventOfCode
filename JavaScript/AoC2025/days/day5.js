@@ -1,6 +1,5 @@
 import fs from "fs"
 import path from "path"
-import { compileFunction } from "vm";
 
 export default class Day5 {
     constructor() {
