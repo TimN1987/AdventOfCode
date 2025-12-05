@@ -20,3 +20,7 @@ int day4Part1Result = Day4.PartOne();
 int day4Part2Result = Day4.PartTwo();
 
 Console.WriteLine($"Day 4:\nPart 1: {day4Part1Result}\nPart 2: {day4Part2Result}");
+
+Day5.Solution(out int day5Part1Result, out long day5Part2Result);
+
+Console.WriteLine($"Day 5:\nPart 1: {day5Part1Result}\nPart 2: {day5Part2Result}");
