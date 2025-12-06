@@ -3,6 +3,7 @@ from days.day2 import Day2
 from days.day3 import Day3
 from days.day4 import Day4
 from days.day5 import Day5
+from days.day6 import Day6
 
 # Day 1
 day1 = Day1()
@@ -23,3 +24,7 @@ day4.print_solution()
 # Day 5
 day5 = Day5()
 day5.print_solution()
+
+# Day 6
+day6 = Day6()
+day6.print_solution()
