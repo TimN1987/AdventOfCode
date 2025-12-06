@@ -22,3 +22,6 @@ day5.printResults();
 
 const day6 = new Day6();
 day6.printResults();
+
+const day7 = new Day7();
+day7.printResults();
