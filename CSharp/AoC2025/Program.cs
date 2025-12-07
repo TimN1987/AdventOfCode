@@ -29,3 +29,5 @@ long day6Part1Result = Day6.PartOne();
 long day6Part2Result = Day6.PartTwo();
 
 Console.WriteLine($"Day6:\nPart 1: {day6Part1Result}\nPart 2: {day6Part2Result}");
+
+Day7.Solution();
