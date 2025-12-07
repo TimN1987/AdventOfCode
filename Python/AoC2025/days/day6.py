@@ -7,7 +7,6 @@ class Day6:
             self.p1data = [line.split() for line in self.data]
             self.p2data = list(map(list, zip(*self.data)))
 
-
     def part_one(self):
         total = 0
         rows = self.p1data
