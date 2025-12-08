@@ -1,4 +1,5 @@
-﻿using AoC2025.Days;
+﻿using AoC2025;
+using AoC2025.Days;
 
 int day1Part1Result = Day1.Part1();
 int day1Part2Result = Day1.Part2();
@@ -31,3 +32,8 @@ long day6Part2Result = Day6.PartTwo();
 Console.WriteLine($"Day6:\nPart 1: {day6Part1Result}\nPart 2: {day6Part2Result}");
 
 Day7.Solution();
+
+int day8Part1Result = Day8.PartOne();
+int day8Part2Result = Day8.PartTwo();
+
+Console.WriteLine($"Day8:\nPart1: {day8Part1Result}\nPart 2: {day8Part2Result}");
