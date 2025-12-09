@@ -37,3 +37,8 @@ int day8Part1Result = Day8.PartOne();
 int day8Part2Result = Day8.PartTwo();
 
 Console.WriteLine($"Day8:\nPart1: {day8Part1Result}\nPart 2: {day8Part2Result}");
+
+long day9Part1Result = Day9.PartOne();
+long day9Part2Result = Day9.PartTwo();
+
+Console.WriteLine($"Day 9\nPart 1: {day9Part1Result}\nPart 2: {day9Part2Result}");
