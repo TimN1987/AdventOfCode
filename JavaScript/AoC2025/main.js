@@ -7,6 +7,7 @@ import Day6 from "./days/day6.js"
 import Day7 from "./days/day7.js"
 import Day8 from "./days/day8.js"
 import Day9 from "./days/day9.js"
+import Day10 from "./days/day10.js"
 
 const day1 = new Day1();
 day1.printResults();
@@ -34,3 +35,6 @@ day8.printResults();
 
 const day9 = new Day9();
 day9.printResults();
+
+const day10 = new Day10();
+day10.printResults();
