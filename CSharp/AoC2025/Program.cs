@@ -61,3 +61,10 @@ long day9Part2Result = Day9.PartTwo();
 sw.Stop();
 
 Console.WriteLine($"Day 9\nPart 1: {day9Part1Result}\nPart 2: {day9Part2Result}\nTime: {sw.ElapsedMilliseconds}ms");
+
+sw.Restart();
+long day10Part1Result = Day10.PartOne();
+long day10Part2Result = Day10.PartTwo();
+sw.Stop();
+
+Console.WriteLine($"Day 10\nPart 1: {day10Part1Result}\nPart 2: {day10Part2Result}\nTime: {sw.ElapsedMilliseconds}ms");
