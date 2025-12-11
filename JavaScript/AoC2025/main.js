@@ -38,7 +38,7 @@ const day9 = new Day9();
 day9.printResults();
 
 const day10 = new Day10();
-day10.printResults();
+await day10.printResults();
 
 const day11 = new Day11();
 day11.printResults();
