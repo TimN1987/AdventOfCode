@@ -37,7 +37,7 @@ public static class Day11
     }
 
     private static long FollowPath(string start, bool visitsDac, bool visitsFft)
-{
+    {
         if (start == "dac") visitsDac = true;
         if (start == "fft") visitsFft = true;
 

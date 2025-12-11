@@ -9,6 +9,7 @@ from days.day8 import Day8
 from days.day9 import Day9
 from days.day10 import Day10
 from days.day11 import Day11
+from days.day12 import Day12
 
 # Day 1
 day1 = Day1()
@@ -53,3 +54,7 @@ day10.print_solution()
 # Day 11
 day11 = Day11()
 day11.print_solution()
+
+# Day 12
+day12 = Day12()
+day12.print_solution()
