@@ -1,13 +1,40 @@
 class Day12:
     def __init__(self):
         with open("../../Data/2025/day12.txt") as f:
-            self.data = [line.rstrip('\n').split(' ') for line in f]
+            self.data = [line.rstrip('\n') for line in f]
+        self.regions = [[x for x in line.split(' ')] for line in self.data if len(line) > 6]
+        self.sizes = {}
+        self.fill_sizes()
 
     def part_one(self):
-        pass
+        total = 0
+        for region in self.regions:
+            size = int(region[0][:2]) * int(region[0][3:5])
+            presents = 0
+            for i in range(1, len(region)):
+                presents += int(region[i]) * self.sizes[i - 1]
+            if size >= presents:
+                total += 1
+        return total
     
     def part_two(self):
-        pass
+        return "Merry Christmas"
+
+    def fill_sizes(self):
+        num, count = 0, 0
+        for line in self.data:
+            if line == "":
+                self.sizes[num] = count
+                count = 0
+            elif line[-1] == ':':
+                num = int(line[0])
+            elif '#' in line or '.' in line:
+                for x in line:
+                    if x == '#':
+                        count += 1
+            else:
+                return
+
 
     def print_solution(self):
         print("Day 12:")
