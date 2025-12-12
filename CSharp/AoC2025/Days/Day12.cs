@@ -11,7 +11,6 @@ public static class Day12
     public static int PartOne()
     {
         Dictionary<int, int> size = [];
-        List<string> regions = [];
 
         int num = 0, present = 0, region = 0, total = 0;
         foreach (var line in _data)
