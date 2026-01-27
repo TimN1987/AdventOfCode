@@ -1,16 +1,16 @@
-import Day1 from "./days/day1.js"
-import Day2 from "./days/day2.js"
+import Day1 from './days/day1.js';
+import Day2 from './days/day2.js';
 
-// Day 1
-const day1 = new Day1();
-let start = process.hrtime.bigint();
-day1.moveLift();
-let end = process.hrtime.bigint();
-console.log(`Day 1 run time = ${(Number(end - start) / 1_000_000).toFixed(4)} ms.`);
+function runChallenge(title, challengeInstance, methodName) {
+    const start = process.hrtime.bigint();
 
-// Day 2
-const day2 = new Day2();
-start = process.hrtime.bigint();
-day2.orderStock();
-end = process.hrtime.bigint();
-console.log(`Day 2 run time = ${(Number(end - start) / 1_000_000).toFixed(4)} ms.`);
+    challengeInstance[methodName]();
+    
+    const end = process.hrtime.bigint();
+    const ms = Number(end - start) / 1_000_000;
+    
+    console.log(`${title} run time = ${ms.toFixed(4)} ms.`);
+}
+
+runChallenge("Day 1", new Day1(), "moveLift");
+runChallenge("Day 2", new Day2(), "orderStock");

@@ -5,9 +5,9 @@ export default class Day1 {
     constructor() {
         const filePath = path.resolve("../../Data/2015/day1.txt");
         this.data = fs.readFileSync(filePath, "utf-8");
-        this.floor = 1;
+        this.floor = 0;
         this.basementEntered = false;
-        this.basementTime = 0;
+        this.basementTime = 1;
     }
 
     moveLift() {
