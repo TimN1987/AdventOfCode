@@ -10,3 +10,8 @@ day1.RunLift();
 
 Day2 day2 = new Day2();
 day2.WrapPresents();
+
+// Day 3
+
+Day3 day3 = new Day3();
+day3.Deliver();
