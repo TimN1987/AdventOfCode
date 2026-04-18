@@ -14,5 +14,19 @@ public class Day1
         return frequency;
     }
 
+    public int Part2()
+    {
+        HashSet<int> visited = [];
+        int frequency = 0, i = 0;
+        while (!visited.Contains(frequency))
+        {
+            visited.Add(frequency);
+            frequency += _data[i][0] == '+' ? int.Parse(_data[i][1..]) : - int.Parse(_data[i][1..]);
+            i++;
+            i = i < _data.Length ? i : 0;
+        }
+        return frequency;
+    }
+
     private static string[] GetData() => File.ReadAllLines("../../Data/2018/day1.txt");
 }
