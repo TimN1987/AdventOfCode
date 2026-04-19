@@ -11,7 +11,7 @@ class Day1:
     def part_one(self):
         freq = 0
         for d in self.data:
-            freq += int(d[1:]) if d[0] == '+' else 0 - int(d[1:])
+            freq += int(d)
         print(f"The final frequency is {freq}")
 
     def part_two(self):
@@ -19,7 +19,7 @@ class Day1:
         freq, i = 0, 0
         while freq not in visited:
             visited.add(freq)
-            freq += int(self.data[i][1:]) if self.data[i][0] == '+' else 0 - int(self.data[i][1:])
+            freq += int(self.data[i])
             i += 1
             if i == len(self.data):
                 i = 0
