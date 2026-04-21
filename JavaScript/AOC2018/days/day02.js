@@ -47,7 +47,7 @@ export default class Day2 {
                             idx++;
                         }
                     }
-                    console.log(`The common letters are: ${letters.join()}`);
+                    console.log(`The common letters are: ${letters.join('')}`);
                     return;
                 }
             }
