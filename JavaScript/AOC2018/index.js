@@ -1,4 +1,4 @@
-import { Day1, Day2 } from "./days/index.js"
+import { Day1, Day2, Day3 } from "./days/index.js"
 
 function runChallenge(title, challengeInstance, methodName) {
     const start = process.hrtime.bigint();
@@ -13,3 +13,4 @@ function runChallenge(title, challengeInstance, methodName) {
 
 runChallenge("Day 1", new Day1(), "solve");
 runChallenge("Day 2", new Day2(), "solve");
+runChallenge("Day 3", new Day3(), "solve");
