@@ -26,7 +26,11 @@ export default class Day3 {
     }
 
     partOne() {
-        const count = this.grid.filter(num => num === -1).length;
+        let count = 0;
+        for (let i = 0; i < this.grid.length; ++i) {
+            if (this.grid[i] === -1)
+                count++;
+        }
         console.log(`There number of overlaps is: ${count}`);
     }
 
